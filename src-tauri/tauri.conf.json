@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schema.tauri.app/config/2.json",
+  "productName": "EterPix VRC Uploader",
+  "version": "1.0.0",
+  "identifier": "uk.eterpix.vrc-uploader",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/icon.png",
+      "icons/icon.ico"
+    ],
+    "resources": []
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "EterPix VRC Uploader",
+        "width": 420,
+        "height": 720,
+        "resizable": true,
+        "minWidth": 360,
+        "minHeight": 560,
+        "center": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  }
+}
